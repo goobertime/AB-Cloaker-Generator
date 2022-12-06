@@ -1,53 +1,61 @@
-<!DOCTYPE html>
-<title>Test</title>
-<head>
-	<style>
-		body {
-			background-color: #272727;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 20%;
-		}
-
-		.main {
-			width: 50%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			flex-direction: column;
-			background-color: rgb(82, 82, 82);
-			margin: 10px;
-			font-family: 'Roboto', sans-serif;
-		}
-
-		.btn {
-			width: 100%;
-			height: 50px;
-			background-color: rgb(29, 29, 29);
-			color: white;
-			font-size: 20px;
-			border: none;
-			cursor: pointer;
-		}
-	</style>
-</head>
-
+<title>My Apps</title>
+<p style="font-size:50px; 
+left:43%; 
+position:relative; 
+margin:-0px -0px;
+          color:white
+">AB Cloaker</p>
+<input type="text"  placeholder="Put link here including https://" id="id" style="position:relative; 
+  margin:-49px-50px;
+  left: 45%;
+  top:45%;
+  border: 2px solid red;
+  
+">
+<p style="font-size:20px;
+font-family:cubic;color:red;
+position:relative;
+top:46%;
+left:42%;
+margin:-49px-50px
+">Coded By R480 & XgunisCuteBeast</p>
+  <style>
+      body
+      {background:black
+      }
+</style>
+  <button onclick="openGame()" style="height:150px;
+width:300px;background-color:grey;
+font-size:20px;
+font-family:cubic;
+color:black;
+position:relative;
+margin:-40px -60px;
+top:8%;
+left:45%;
+cursor: pointer
+">Open AB:Cloaked</button>
 <body>
-	<div class="main">
-		<h1>Click the button to open a new window.</h1>
-		<button id="b1"class="btn">Open</button>
-	</div>
+  <script>
+      
+    function openGame() {
+      var win = window.open('','','width=9000,height=9000 top=9000,left=9000')
+      var url = String(document.getElementById("id").value) //<------ this is where you put the link -reminder for r480
+      var iframe = win.document.createElement('iframe')
+      iframe.style.width = "100%";
+      iframe.style.height = "100%"
+      iframe.style.border = "none";
+      iframe.src = url
+        win.close
+      win.document.body.appendChild(iframe)
+      location.replace("https://launchpad.classlink.com/warren") //<----------- this is the link you want your history to see.
+window.close()
+    }
+
+      
+      
+      
+      
+      
+  </script>
 </body>
-
-<script>
-	document.querySelector('.btn')
-	.addEventListener('click', function () {
-		window.open('https://sites.google.com/warrentboe.org/maxinum/aaaa','https://globby.com','width=9000,height=9000 top=9000,left=9000');
-                document.getElementById(zb1).requestFullscreen()
-    });
-</script>
-
-</html>

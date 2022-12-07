@@ -1,4 +1,3 @@
-<button class="gb" onclick="window.history.back()";>Go Back</button>
 <title>My Apps</title>
 <p style="font-size:50px; 
 position:absolute;

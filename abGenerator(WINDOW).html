@@ -1,10 +1,10 @@
-<button class="gb" onclick="window.location.href='https://rawcdn.githack.com/r480github/AB-Cloaker-Generator/5debca6788985142b06eb8d44cb7af2d7a799e21/Website%20with%20both.html';">Go Back</button>
+<button class="gb" onclick="window.location.href='https://rawcdn.githack.com/r480github/AB-Cloaker-Generator/ecf39f9348792370bb6544f94b524561fa1dfab8/Website%20with%20both.html';">Go Back</button>
 <title>My Apps</title>
 <p style="font-size:50px; 
-left:43%; 
-position:absolute; 
+position:absolute;
+left:43%;
 margin:-0px -0px;
-          color:black
+color:black
 ">AB Cloaker</p>
 <input type="text" placeholder="Put link here including https://" id="id" style="position:relative; 
   margin:-49px-50px;
@@ -13,18 +13,8 @@ margin:-0px -0px;
   border: 2px solid red;
   
 ">
-<p style="font-size:20px;
-font-family:cubic;color:red;
-position:absolute;
-top:50%;
-left:42%;
-margin:-49px-50px
-">Coded By R480 & XgunisCuteBeast</p>
 <style>
-  body {
-    background: #A9a9a9
-  }
-    .gb
+        .gb
     {        
         position:absolute;
         background:grey;
@@ -46,22 +36,38 @@ margin:-49px-50px
 
     }
 
+  body {
+    background: #A9a9a9
+  }
+
 </style>
-<button onclick="openGame()" style="height:150px;
+<p style="font-size:20px;
+font-family:cubic;color:red;
+position:absolute;
+top:60%;
+left:42%;
+">Coded By R480 & XgunisCuteBeast</p>
+
+<head>
+
+  <head>
+  </head>
+  <button onclick="openGame()" style="height:150px;
 width:300px;background-color:grey;
 font-size:20px;
 font-family:cubic;
 color:black;
-position:absolute;
+position:fixed;
 margin:-40px -60px;
-top:23%;
+top:25%;
 left:45%;
-cursor: pointer">Open AB:Cloaked</button>
+cursor: pointer
+">Open AB:Cloaked</button>
 
 <body>
   <script>
     function openGame() {
-      var win = window.open('', '', 'width=9000,height=9000 top=9000,left=9000')
+      var win = window.open()
       var url = String(document.getElementById("id").value) //<------ this is where you put the link -reminder for r480
       var iframe = win.document.createElement('iframe')
       iframe.style.width = "100%";

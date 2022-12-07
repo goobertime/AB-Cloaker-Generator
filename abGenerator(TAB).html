@@ -1,4 +1,4 @@
-<button class="gb" onclick="window.location.href='https://rawcdn.githack.com/r480github/AB-Cloaker-Generator/f24434283b00bcf3ea750e5767e419bd68a80b86/Website%20with%20both.html';">Go Back</button>
+<button class="gb" onclick="window.location.href='gb()';">Go Back</button>
 <title>My Apps</title>
 <p style="font-size:50px; 
 position:absolute;
@@ -66,6 +66,9 @@ cursor: pointer
 
 <body>
   <script>
+    function gb(){
+      window.history.back()
+    }
     function openGame() {
       var win = window.open()
       var url = String(document.getElementById("id").value) //<------ this is where you put the link -reminder for r480

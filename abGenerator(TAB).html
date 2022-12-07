@@ -1,4 +1,4 @@
-<button class="gb" onclick="window.location.href='gbb';">Go Back</button>
+<button class="gb" onclick="window.location.href='window.history.back()';">Go Back</button>
 <title>My Apps</title>
 <p style="font-size:50px; 
 position:absolute;
@@ -66,9 +66,6 @@ cursor: pointer
 
 <body>
   <script>
-    function gbb(){
-      history.go(-1);
-    }
     function openGame() {
       var win = window.open()
       var url = String(document.getElementById("id").value) //<------ this is where you put the link -reminder for r480

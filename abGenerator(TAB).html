@@ -1,29 +1,30 @@
 <title>My Apps</title>
 <p style="font-size:50px; 
-left:43%; 
-position:relative; 
+position:absolute;
+left:43%;
 margin:-0px -0px;
 color:black
 ">AB Cloaker</p>
-<input type="text"  placeholder="Put link here including https://" id="id" style="position:relative; 
+<input type="text" placeholder="Put link here including https://" id="id" style="position:relative; 
   margin:-49px-50px;
   left: 45%;
   top:45%;
   border: 2px solid red;
   
-"></input>
+">
 <style>
-body
-    {background:#A9a9a9
-    }
+  body {
+    background: #A9a9a9
+  }
+
 </style>
 <p style="font-size:20px;
 font-family:cubic;color:red;
-position:relative;
-top:46%;
+position:absolute;
+top:60%;
 left:42%;
-margin:-49px-50px
 ">Coded By R480 & XgunisCuteBeast</p>
+
 <head>
 
   <head>
@@ -33,15 +34,15 @@ width:300px;background-color:grey;
 font-size:20px;
 font-family:cubic;
 color:black;
-position:relative;
+position:fixed;
 margin:-40px -60px;
-top:8%;
+top:25%;
 left:45%;
 cursor: pointer
 ">Open AB:Cloaked</button>
+
 <body>
   <script>
-      
     function openGame() {
       var win = window.open()
       var url = String(document.getElementById("id").value) //<------ this is where you put the link -reminder for r480
@@ -50,15 +51,10 @@ cursor: pointer
       iframe.style.height = "100%"
       iframe.style.border = "none";
       iframe.src = url
-        win.close
+      win.close
       win.document.body.appendChild(iframe)
-window.close()
+      window.close()
     }
 
-      
-      
-      
-      
-      
   </script>
 </body>
